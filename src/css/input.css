@@ -50,7 +50,6 @@
     --color-primary: #156963;
     --color-secondary: #2C1500;
     --color-white: #fff;
-    --container-2xl: 1400px;
     /* COLOR */
 
     /* This works as a native Tailwind utility classes, no overriding problem */
