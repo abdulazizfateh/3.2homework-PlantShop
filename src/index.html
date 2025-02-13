@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.2 homework | Plant Shop</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body>
+    <header
+        class="site_header flex items-center justify-center z-10 fixed w-full top-0 duration-300 md:bg-transparent md:backdrop-blur-none">
+        <div class="container">
+            <nav class="header_nav flex items-center justify-between h-[70px] sm:h-[75px] md:h-[85px] lg:h-[95px]">
+                <div class="header_nav_logo">
+                    <img src="./assets/images/PlantShop-logo.svg" alt="Plant Shop Logo">
+                </div>
+                <div class="header_nav_actions hidden sm:flex sm:items-center sm:gap-[30px] md:gap-[40px]">
+                    <div class="header_nav_action">
+                        <img src="./assets/images/header-nav-search.svg" alt="Search Icon">
+                    </div>
+                    <div class="header_nav_action">
+                        <img src="./assets/images/header-nav-cart.svg" alt="Cart Icon">
+                    </div>
+                    <button class="header_nav_signup_btn font-N7 text-[14px] leading-[20px] text-primary">Sign
+                        up</button>
+                    <button
+                        class="header_nav_signup_btn font-N7 text-[14px] leading-[20px] text-white min-h-[30px] px-[22.5px] bg-primary md:min-h-[36px] md:px-[32.5px]">Sign
+                        in</button>
+                </div>
+                <div class="header_nav_menu sm:hidden">
+                    <img src="./assets/images/header-nav-burger.svg" alt="Burger Icon">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="site_main">
+        <section
+            class="section_hero min-h-[680px] md:min-h-[740px] 2xl:min-h-[1000px] flex items-center justify-center bg-[url(../assets/images/hero-image.png)] bg-no-repeat bg-center bg-cover md:bg-none md:relative">
+            <div class="max-w-[1232px] w-full md:max-w-[100%]">
+                <div
+                    class="hero_wrapper w-full md:flex md:min-h-[740px] 2xl:min-h-[1000px] md:items-center xl:items-end lg:mt-[80px] 2xl:mt-[0px]">
+                    <div
+                        class="hidden md:flex md:absolute md:top-0 md:left-0 md:w-[48%] md:h-full md:bg-[url(../assets/images/hero-image.png)] md:bg-cover md:bg-no-repeat md:bg-left xl:w-[46%]">
+                    </div>
+                    <div class="hero_content md:ml-[50%] xl:ml-[51%] md:w-[50%]">
+                        <h1
+                            class="hero_title w-full backdrop-blur-xs font-M5 text-[32px] leading-[38px] text-white text-center mb-[14px] md:text-primary md:text-left md:text-[44px] md:leading-[54px] lg:text-[54px] lg:leading-[64px] xl:text-[68px] xl:leading-[82.89px] lg:w-[80%] xl:max-w-[519px] sm:mb-[18px] lg:mb-[24px] 2xl:text-[99px] 2xl:leading-[120px] 2xl:max-w-[700px]">
+                            Kembang Flower Mantap</h1>
+                        <p
+                            class="hero_desc backdrop-blur-xs w-[80%] mx-auto font-M4 text-[14px] leading-[22px] text-white/80 text-center mb-[40px] 
+                       md:w-[95%] md:text-secondary md:text-left md:m-0 opacity-80 md:text-[16px] md:leading-[26px] lg:text-[18px] lg:leading-[32px] 2xl:text-[26px] 2xl:leading-[40px] lg:w-[80%] xl:max-w-[490px] 2xl:max-w-[690px] md:mb-[70px] lg:mb-[85px] xl:mb-[110px]">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <div class="hero_actions flex flex-col items-center gap-[5px] min-[800px]:flex-row">
+                            <div
+                                class="hero_action_prev w-[70%] min-h-[80px] flex flex-col items-center min-[800px]:items-start min-[800px]:p-[4px] lg:p-[10px] xl:px-[20px] 2xl:px-[50px] justify-center gap-[4px] md:gap-[8px] lg:gap-[12px] bg-black/20 backdrop-blur-xl duration-500 hover:bg-primary hover:[&_p]:text-white [&_p]:duration-500 md:bg-transparent sm:w-[50%] md:w-[70%] min-[800px]:w-[50%] sm:min-h-[90px] lg:min-h-[130px] xl:min-h-[160px]">
+                                <div class="hero_action_prev_link flex items-center gap-[8px]">
+                                    <img class="w-[14px] md:w-[18px] lg:w-[21px]" src="./assets/images/hero-prev.svg"
+                                        alt="Previous Icon">
+                                    <span
+                                        class="font-M5 text-[18px] leading-[22px] md:text-[22px] md:leading-[25px] lg:text-[24px] lg:leading-[29.26px] text-[#999]">Previous</span>
+                                </div>
+                                <p
+                                    class="hero_action_prev_title font-M5 text-[22px] leading-[28px] text-white md:text-primary text-center md:text-[26px] md:leading-[30px] lg:text-[32px] lg:leading-[39px]">
+                                    Kaktus Plant</p>
+                            </div>
+                            <div
+                                class="hero_action_next w-[70%] min-h-[80px] flex flex-col items-center min-[800px]:items-start min-[800px]:p-[4px] lg:p-[10px] xl:px-[20px] 2xl:px-[50px] justify-center gap-[4px] md:gap-[8px] lg:gap-[12px] bg-black/20 backdrop-blur-xl duration-500 hover:bg-primary hover:[&_p]:text-white [&_p]:duration-500 md:bg-primary sm:w-[50%] md:w-[70%] min-[800px]:w-[50%] sm:min-h-[90px] lg:min-h-[130px] xl:min-h-[160px]">
+                                <div class="hero_action_next_link flex items-center gap-[8px]">
+                                    <span
+                                        class="font-M5 text-[18px] leading-[22px] text-[#999] md:text-[22px] md:leading-[25px] lg:text-[24px] lg:leading-[29.26px]">Next</span>
+                                    <img class="w-[14px] md:w-[18px] lg:w-[21px]" src="./assets/images/hero-next.svg"
+                                        alt="Next Icon">
+                                </div>
+                                <p
+                                    class="hero_action_next_title font-M5 text-[22px] leading-[28px] md:text-[26px] md:leading-[30px] lg:text-[32px] lg:leading-[39px] text-white text-center">
+                                    Rahasia Plant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="section_offer pt-[80px] pb-[40px] sm:pt-[90px] sm:pb-[50px] md:pt-[110px] md:pb-[60px] lg:pt-[142px] lg:pb-[80px]">
+            <div class="container">
+                <div
+                    class="offer_wrapper grid grid-cols-1 gap-[12px] sm:grid-cols-2 md:grid-cols-4 md:gap-[8px] lg:gap-[14px] xl:gap-[32px]">
+                    <div
+                        class="offer_card flex flex-col items-center gap-[10px] px-[10px] py-[12px] sm:items-start sm:gap-[12px] md:gap-[14px] lg:gap-[16px] sm:px-[14px] sm:py-[16px] md:px-[16px] md:py-[22px] border border-[#E0E0E0]">
+                        <div
+                            class="offer_card_image_title flex flex-col items-center gap-[6px] sm:flex-row sm:gap-[10px] md:gap-[14px] lg:gap-[16px]">
+                            <img src="./assets/images/offer-1.svg" alt="Truck">
+                            <span
+                                class="offer_card_title font-M7 text-[12px] leading-[16px] sm:w-[60%] sm:text-[14px] sm:leading-[18px] md:text-[16px] md:leading-[24px] text-primary">Fast
+                                Delivery</span>
+                        </div>
+                        <p
+                            class="offer_card_desc w-[80%] text-center font-M4 text-[10px] leading-[16px] text-secondary sm:text-left md:w-[90%]">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard
+                        </p>
+                    </div>
+                    <div
+                        class="offer_card flex flex-col items-center gap-[10px] px-[10px] py-[12px] sm:items-start sm:gap-[12px] md:gap-[14px] lg:gap-[16px] sm:px-[14px] sm:py-[16px] md:px-[16px] md:py-[22px] border border-[#E0E0E0]">
+                        <div
+                            class="offer_card_image_title flex flex-col items-center gap-[6px] sm:flex-row sm:gap-[10px] md:gap-[14px] lg:gap-[16px]">
+                            <img src="./assets/images/offer-2.svg" alt="Truck">
+                            <span
+                                class="offer_card_title font-M7 text-[12px] leading-[16px] sm:w-[60%] sm:text-[14px] sm:leading-[18px] md:text-[16px] md:leading-[24px] text-primary">Great
+                                Customer Service</span>
+                        </div>
+                        <p
+                            class="offer_card_desc w-[80%] text-center font-M4 text-[10px] leading-[16px] text-secondary sm:text-left md:w-[90%]">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard
+                        </p>
+                    </div>
+                    <div
+                        class="offer_card flex flex-col items-center gap-[10px] px-[10px] py-[12px] sm:items-start sm:gap-[12px] md:gap-[14px] lg:gap-[16px] sm:px-[14px] sm:py-[16px] md:px-[16px] md:py-[22px] border border-[#E0E0E0]">
+                        <div
+                            class="offer_card_image_title flex flex-col items-center gap-[6px] sm:flex-row sm:gap-[10px] md:gap-[14px] lg:gap-[16px]">
+                            <img src="./assets/images/offer-3.svg" alt="Truck">
+                            <span
+                                class="offer_card_title font-M7 text-[12px] leading-[16px] sm:w-[60%] sm:text-[14px] sm:leading-[18px] md:text-[16px] md:leading-[24px] text-primary">Original
+                                Plants</span>
+                        </div>
+                        <p
+                            class="offer_card_desc w-[80%] text-center font-M4 text-[10px] leading-[16px] text-secondary sm:text-left md:w-[90%]">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard
+                        </p>
+                    </div>
+                    <div
+                        class="offer_card flex flex-col items-center gap-[10px] px-[10px] py-[12px] sm:items-start sm:gap-[12px] md:gap-[14px] lg:gap-[16px] sm:px-[14px] sm:py-[16px] md:px-[16px] md:py-[22px] border border-[#E0E0E0]">
+                        <div
+                            class="offer_card_image_title flex flex-col items-center gap-[6px] sm:flex-row sm:gap-[10px] md:gap-[14px] lg:gap-[16px]">
+                            <img src="./assets/images/offer-4.svg" alt="Truck">
+                            <span
+                                class="offer_card_title font-M7 text-[12px] leading-[16px] sm:w-[60%] sm:text-[14px] sm:leading-[18px] md:text-[16px] md:leading-[24px] text-primary">Affordable
+                                Price</span>
+                        </div>
+                        <p
+                            class="offer_card_desc w-[80%] text-center font-M4 text-[10px] leading-[16px] text-secondary sm:text-left md:w-[90%]">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_featured">
+            <div class="container">
+                <div class="featured_wrapper pb-[40px] sm:pb-[50px] md:pb-[60px] lg:pb-[70px] xl:pb-[80px]">
+                    <div
+                        class="featured_title_filter flex items-center justify-between pb-[16px] border-b border-[#E0E0E0] mb-[24px]">
+                        <h5
+                            class="featured_title font-M5 text-[15px] leading-[18px] text-black sm:text-[17px] sm:leading-[20px] md:text-[20px] md:leading-[24.38px]">
+                            Featured Plants</h5>
+                        <div class="featured_filter border border-[#E0E0E0]">
+                            <select
+                                class="min-h-[31px] w-[95%] px-[14px] font-M5 text-[10px] leading-[12px] text-black outline-none sm:text-[12px] sm:leading-[14.63px]">
+                                <option>Cheaper First</option>
+                                <option>Expensive First</option>
+                                <option>News First</option>
+                                <option>Top First</option>
+                                <option>Potted First</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div
+                        class="featured_cards grid grid-cols-2 gap-[12px] sm:gap-[16px] lg:gap-[20px] sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+                        <div class="featured_card flex flex-col items-center gap-[12px] md:gap-[14px] lg:gap-[16px]">
+                            <div class="featured_card_image">
+                                <img src="./assets/images/featured-1.png" alt="Flower">
+                            </div>
+                            <div class="featured_card_body flex flex-col items-center gap-[6px] md:gap-[8px]">
+                                <span
+                                    class="featured_card_title font-M4 text-[12px] leading-[14px] md:text-[14px] md:leading-[17px] lg:text-[16px] lg:leading-[19.5px] text-black">Kaktus
+                                    Plants</span>
+                                <b
+                                    class="featured_card_price font-M6 text-[12px] leading-[14px] md:text-[14px] md:leading-[17px] lg:text-[16px] lg:leading-[19.5px] text-black">IDR
+                                    85.000</b>
+                            </div>
+                        </div>
+                        <div class="featured_card flex flex-col items-center gap-[12px] md:gap-[14px] lg:gap-[16px]">
+                            <div class="featured_card_image">
+                                <img src="./assets/images/featured-2.png" alt="Flower">
+                            </div>
+                            <div class="featured_card_body flex flex-col items-center gap-[6px] md:gap-[8px]">
+                                <span
+                                    class="featured_card_title font-M4 text-[12px] leading-[14px] md:text-[14px] md:leading-[17px] lg:text-[16px] lg:leading-[19.5px] text-black">Landak
+                                    Plants</span>
+                                <b
+                                    class="featured_card_price font-M6 text-[12px] leading-[14px] md:text-[14px] md:leading-[17px] lg:text-[16px] lg:leading-[19.5px] text-black">IDR
+                                    105.000</b>
+                            </div>
+                        </div>
+                        <div class="featured_card flex flex-col items-center gap-[12px] md:gap-[14px] lg:gap-[16px]">
+                            <div class="featured_card_image">
+                                <img src="./assets/images/featured-3.png" alt="Flower">
+                            </div>
+                            <div class="featured_card_body flex flex-col items-center gap-[6px] md:gap-[8px]">
+                                <span
+                                    class="featured_card_title font-M4 text-[12px] leading-[14px] md:text-[14px] md:leading-[17px] lg:text-[16px] lg:leading-[19.5px] text-black">Kecubung
+                                    Plants</span>
+                                <b
+                                    class="featured_card_price font-M6 text-[12px] leading-[14px] md:text-[14px] md:leading-[17px] lg:text-[16px] lg:leading-[19.5px] text-black">IDR
+                                    85.000</b>
+                            </div>
+                        </div>
+                        <div class="featured_card flex flex-col items-center gap-[12px] md:gap-[14px] lg:gap-[16px]">
+                            <div class="featured_card_image">
+                                <img src="./assets/images/featured-4.png" alt="Flower">
+                            </div>
+                            <div class="featured_card_body flex flex-col items-center gap-[6px] md:gap-[8px]">
+                                <span
+                                    class="featured_card_title font-M4 text-[12px] leading-[14px] md:text-[14px] md:leading-[17px] lg:text-[16px] lg:leading-[19.5px] text-black">Kaktus
+                                    Plants</span>
+                                <b
+                                    class="featured_card_price font-M6 text-[12px] leading-[14px] md:text-[14px] md:leading-[17px] lg:text-[16px] lg:leading-[19.5px] text-black">IDR
+                                    85.000</b>
+                            </div>
+                        </div>
+                        <div class="featured_card flex flex-col items-center gap-[12px] md:gap-[14px] lg:gap-[16px]">
+                            <div class="featured_card_image">
+                                <img src="./assets/images/featured-5.png" alt="Flower">
+                            </div>
+                            <div class="featured_card_body flex flex-col items-center gap-[6px] md:gap-[8px]">
+                                <span
+                                    class="featured_card_title font-M4 text-[12px] leading-[14px] md:text-[14px] md:leading-[17px] lg:text-[16px] lg:leading-[19.5px] text-black">Kaktus
+                                    Plants</span>
+                                <b
+                                    class="featured_card_price font-M6 text-[12px] leading-[14px] md:text-[14px] md:leading-[17px] lg:text-[16px] lg:leading-[19.5px] text-black">IDR
+                                    85.000</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_buy bg-[url(../assets/images/buy-2.png)] bg-no-repeat bg-cover bg-center sm:bg-none">
+            <div class="container">
+                <div
+                    class="buy_wrapper min-h-[550px] min-[480px]:min-h-[620px] sm:min-h-auto grid grid-cols-1 place-items-center sm:grid-cols-2 sm:place-items-start sm:place-content-between sm:gap-[16px] md:gap-[24px] lg:gap-[34px] mb-[40px] sm:mb-[50px] md:mb-[60px] lg:mb-[70px] xl:mb-[80px]">
+                    <div
+                        class="buy_content_wrapper flex flex-col items-center gap-[40px] sm:min-h-[609px] sm:items-start">
+                        <div class="buy_content bg-blue-50/90 p-[10px] rounded-[16px] sm:bg-transparent">
+                            <h2
+                                class="buy_title title w-[80%] min-[420px]:w-[60%] mx-auto text-center mb-[16px] rounded-[16px] min-[640px]:w-[95%] sm:m-0 sm:mb-[16px] sm:text-left">
+                                Buy
+                                more plants, it helps you to be relaxed</h2>
+                            <p
+                                class="buy_desc w-[90%] min-[420px]:w-[65%] mx-auto font-M4 text-[12px] leading-[18px] text-secondary min-[640px]:w-[95%] sm:m-0 sm:text-left sm:text-[14px] sm:leading-[24px] md:text-[16px] md:leading-[28px] text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida
+                                gravida aliquam. Pellentesque et lobortis nisl. Sed et mauris justo. Nulla eu enim non
+                                mauris maximus dignissim. Maecenas vitae eros sapien. Quisque pellentesque tempus
+                                dignissim.
+                            </p>
+                        </div>
+                        <div class="md:flex-1 md:flex md:items-end">
+                            <img class="rounded-[16px] min-[640px]:rounded-[0px]" src="./assets/images/buy-1.png"
+                                alt="Flower">
+                        </div>
+                    </div>
+                    <div class="buy_image hidden w-full sm:flex sm:items-center sm:justify-end">
+                        <img class="sm:min-h-[609px] object-cover" src="./assets/images/buy-2.png" alt="Flowers">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_get mb-[40px] sm:mb-[50px] md:mb-[60px] lg:mb-[70px] xl:mb-[80px]">
+            <div class="container">
+                <div
+                    class="get_wrapper bg-[#F3F4F6] px-[22px] py-[55px] flex flex-col items-center gap-[35px] min-[640px]:gap-[0px] min-[640px]:justify-between min-[520px]:flex-row min-[520px]:px-[0px] min-[520px]:py-[0px]">
+                    <div
+                        class="get_content flex flex-col items-center gap-[32px] min-[640px]:flex-1 min-[520px]:py-[22px] min-[520px]:pl-[44px] min-[768px]:py-[44px] min-[768px]:pl-[55px] min-[1280px]:py-[88px] min-[1280px]:pl-[97px]">
+                        <h2 class="get_title title text-center min-[520px]:w-[100%] min-[520px]:text-left">Get your
+                            favourites plant on our shop now</h2>
+                        <div class="get_btn_wrapper min-[520px]:flex min-[520px]:justify-start min-[520px]:w-full">
+                            <button
+                                class="get_visit_btn capitalize min-h-[40px] px-[42px] font-N7 text-[14px] leading-[20px] text-[#FAFEFE] bg-primary">Visit
+                                shop</button>
+                        </div>
+                    </div>
+                    <div class="get_image sm:w-[50%] lg:w-auto">
+                        <img class="min-[480px]:w-[400px] sm:w-auto" src="./assets/images/get-image.png"
+                            alt="Potted Flower">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site_footer">
+        <div class="container">
+            <div
+                class="footer_wrapper grid grid-cols-1 lg:grid-cols-[2.8fr_1fr_1fr_2.4fr] gap-y-[10px] border-t border-[rgba(21,105,99,0.3)] py-[30px] sm:grid-cols-[2.82fr_1fr_1fr_2.34fr] sm:gap-y-[0] sm:gap-x-[12px] md:gap-x-[24px] lg:gap-x-[36px] xl:gap-x-[70px] sm:py-[35px] md:py-[45px] lg:pt-[60px] lg:pb-[70px] xl:px-[111px]">
+                <div class="footer_logo_address">
+                    <img class="max-w-[80px] md:max-w-[100px] lg:max-w-[112px] mb-[14px] md:mb-[18px] lg:mb-[24px]"
+                        src="assets/images/footer-logo.svg" alt="Logo">
+                    <b
+                        class="block font-WS5 text-[12px] text-[#333333] sm:text-[14px] md:text-[16ox] mb-[6px] sm:mb-[8px] md:mb-[10px]">Plantku
+                        House</b>
+                    <span
+                        class="block font-WS4 w-[70%] sm:w-[90%] lg:w-full text-[10px] leading-[15px] text-[#4F4F4F] sm:text-[12px] sm:leading-[17px] md:text-[13px] md:leading-[20px]">Jl.
+                        Laksda Adisucipto No.51, Demangan, Kec. Depok, Kota Yogyakarta, Daerah Istimewa Yogyakarta
+                        55282</span>
+                </div>
+                <ul class="footer_list flex flex-col gap-[6px] sm:gap-[8px] md:gap-[12px] lg:gap-[14px]">
+                    <li
+                        class="font-WS5 text-[12px] text-black mb-[2px] sm:mb-[4px] md:mb-[6px] sm:text-[14px] md:text-[16px]">
+                        Perusahaan</li>
+                    <li class="font-WS4 text-[10px] text-black sm:text-[12px] md:text-[14px]"><a href="#"><span>Tentang
+                                Kami</span></a></li>
+                    <li class="font-WS4 text-[10px] text-black sm:text-[12px] md:text-[14px]"><a href="#"><span>Hubungi
+                                Kami</span></a></li>
+                </ul>
+                <ul class="footer_list flex flex-col gap-[6px] sm:gap-[8px] md:gap-[12px] lg:gap-[14px]">
+                    <li
+                        class="font-WS5 text-[12px] text-black mb-[2px] sm:mb-[4px] md:mb-[6px] sm:text-[14px] md:text-[16px]">
+                        Produk</li>
+                    <li class="font-WS4 text-[10px] text-black sm:text-[12px] md:text-[14px]"><a
+                            href="#"><span>Tanaman</span></a></li>
+                    <li class="font-WS4 text-[10px] text-black sm:text-[12px] md:text-[14px]"><a href="#"><span>Tanaman
+                                Lain</span></a></li>
+                </ul>
+                <div class="footer_form">
+                    <span
+                        class="block font-WS5 text-[12px] text-black mb-[6px] sm:mb-[8px] md:mb-[10px] lg:mb-[14px] sm:text-[14px] md:text-[16px]">Berlangganan
+                        Email Kami</span>
+                    <form
+                        class="footer_form max-w-[232px] flex flex-col items-start gap-[6px] sm:mb-[8px] md:gap-[10px] lg:gap-[14px]">
+                        <input
+                            class="footer_form_input w-full min-h-[32px] font-WS4 text-[12px] text-black placeholder:text-black/50 border border-[#F2F2F2] outline-none rounded-[2px] indent-[8px] sm:indent-[10px] md:indent-[13px]"
+                            type="text" placeholder="Masukan Alamat Email" required>
+                        <button
+                            class="footer_form_submit_btn min-h-[22px] px-[12px] text-[8px] leading-[14px] text-white bg-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.querySelector(".site_header");
+        window.addEventListener("scroll", () => {
+            if (document.documentElement.scrollTop > 0) {
+                header.style.backgroundColor = "#fff";
+            } else {
+                header.style.backgroundColor = "transparent";
+            }
+        });
+    </script>
+</body>
+
+</html>
